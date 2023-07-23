@@ -2,7 +2,10 @@ import { SkillsContainer } from "../components/UI/SkillsContainer";
 
 export const Skills = () => {
   return (
-    <section className="h-screen flex flex-col justify-center items-center w-full border-b-2">
+    <section
+      className="h-screen flex flex-col justify-center items-center w-full border-b-2"
+      id="skills"
+    >
       <div className="">
         <div className="flex items-center gap-2">
           <h1 className="text-5xl mt-1 font-extrabold md:text-5xl">Skills</h1>
