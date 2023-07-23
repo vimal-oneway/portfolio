@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@components {
+  .glassmorphism {
+    @apply bg-clip-padding backdrop-filter backdrop-blur-xl !bg-opacity-50 dark:!bg-opacity-60;
+  }
+}
