@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#1a0f17",
-        secondary: "#fff",
+        secondary: "#f323db",
         accent: "#44283c",
       },
       fontFamily: {

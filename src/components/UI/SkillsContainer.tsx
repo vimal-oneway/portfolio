@@ -13,63 +13,91 @@ import {
   TailwindcssIcon,
   TypescriptIcon,
 } from "../../Icon";
+import { Animate } from "../../section/Animate";
 
 export const SkillsContainer = () => {
   return (
     <div className="flex justify-center items-center gap-[30px]">
       <div className="flex h-full items-center justify-center">
-        <SkillCard>
-          <MongoDbIcon />
-        </SkillCard>
+        <Animate>
+          <SkillCard>
+            <MongoDbIcon />
+          </SkillCard>
+        </Animate>
       </div>
 
       <div className="flex flex-col gap-[30px] h-full items-center justify-center">
-        <SkillCard>
-          <JavascriptIcon />
-        </SkillCard>
-        <SkillCard>
-          <TypescriptIcon />
-        </SkillCard>
-        <SkillCard>
-          <NodejsIcon />
-        </SkillCard>
+        <Animate>
+          <SkillCard>
+            <JavascriptIcon />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            <TypescriptIcon />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            <NodejsIcon />
+          </SkillCard>
+        </Animate>
       </div>
 
       <div className="flex flex-col gap-[30px] h-full items-center justify-center">
-        <SkillCard>
-          <FigmaIcon />
-        </SkillCard>
-        <SkillCard>
-          <HtmlIcon />
-        </SkillCard>
-        <SkillCard>
-          {/* <LinuxIcon /> */}
-          <img src="/vimal.png" className="rounded-full" alt="My-photo" />
-        </SkillCard>
-        <SkillCard>
-          <CssIcon />
-        </SkillCard>
-        <SkillCard>
-          <TailwindcssIcon />
-        </SkillCard>
+        <Animate>
+          <SkillCard>
+            <FigmaIcon />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            <HtmlIcon />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            {/* <LinuxIcon /> */}
+            <img src="/vimal.png" className="rounded-full" alt="My-photo" />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            <CssIcon />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            <TailwindcssIcon />
+          </SkillCard>
+        </Animate>
       </div>
 
       <div className="flex flex-col gap-[30px] h-full items-center justify-center">
-        <SkillCard>
-          <ExpressjsIcon />
-        </SkillCard>
-        <SkillCard>
-          <ReactIcon />
-        </SkillCard>
-        <SkillCard>
-          <ReduxIcon />
-        </SkillCard>
+        <Animate>
+          <SkillCard>
+            <ExpressjsIcon />
+          </SkillCard>
+        </Animate>
+
+        <Animate>
+          <SkillCard>
+            <ReactIcon />
+          </SkillCard>
+        </Animate>
+        <Animate>
+          <SkillCard>
+            <ReduxIcon />
+          </SkillCard>
+        </Animate>
       </div>
 
       <div className="flex h-full items-center justify-center">
-        <SkillCard>
-          <BashIcon />
-        </SkillCard>
+        <Animate>
+          <SkillCard>
+            <BashIcon />
+          </SkillCard>
+        </Animate>
       </div>
     </div>
   );
