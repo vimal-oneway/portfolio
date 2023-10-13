@@ -10,9 +10,6 @@ export const Page = () => {
       <Hero />
       <Skills />
       <Project />
-      <div className="h-screen flex justify-center items-center ">
-        <p className="border-2 px-3 py-2">This page under developement 🚧🚨</p>
-      </div>
     </>
   );
 };

@@ -15,14 +15,14 @@ export const Navbar = () => {
         {Navlinks.map(({ title, path }) => (
           <a
             href={path}
-            className={`pt-3 pb-2.5 font-semibold hover:bg-secondary hover:text-primary transition-colors px-3`}
+            className={`pt-3 pb-2.5 font-semibold hover:bg-accent transition-colors px-3`}
           >
             {title}
           </a>
         ))}
         <a
           href="mailto:contact@vimaldev.in"
-          className={`flex gap-1 font-semibold pt-3 pb-2.5 px-3 hover:bg-secondary hover:text-primary transition-colors`}
+          className={`flex gap-1 font-semibold pt-3 pb-2.5 px-3 hover:bg-accent transition-colors`}
         >
           {`Hire me`}
           <ArrowUpRight />

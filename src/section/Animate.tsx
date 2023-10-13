@@ -1,4 +1,4 @@
-import { useAnimation, motion } from "framer-motion";
+import { useAnimation, motion, Variants } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -9,9 +9,11 @@ const boxVariant = {
 
 type AnimateProps = {
   children: React.ReactNode;
+  variants?: Variants;
+  className?: string;
 };
 
-export const Animate = ({ children }: AnimateProps) => {
+export const Animate = ({ children, variants, className }: AnimateProps) => {
   const control = useAnimation();
   const { ref, inView } = useInView();
 
@@ -27,10 +29,10 @@ export const Animate = ({ children }: AnimateProps) => {
   return (
     <motion.div
       ref={ref}
-      variants={boxVariant}
+      variants={variants || boxVariant}
       initial="hidden"
       animate={control}
-      className={`w-full h-full text-white bg-cover bg-center flex justify-center items-end rounded-md`}
+      className={className}
     >
       {children}
     </motion.div>
