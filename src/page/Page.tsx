@@ -1,4 +1,5 @@
 import { Navbar } from "../components/UI/Navbar";
+import { Contact } from "../section/Contact";
 import { Hero } from "../section/Hero";
 import { Project } from "../section/Project";
 import { Skills } from "../section/Skills";
@@ -10,6 +11,7 @@ export const Page = () => {
       <Hero />
       <Skills />
       <Project />
+      <Contact />
     </>
   );
 };

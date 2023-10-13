@@ -3,7 +3,7 @@ import { Page } from "./page/Page";
 
 function App() {
   return (
-    <div className="app font-app bg-primary text-[#fff] scroll-smooth overflow-x-hidden">
+    <div className="app font-app bg-primary text-[#fff] scroll-smooth ">
       <Page />
     </div>
   );

@@ -14,21 +14,17 @@ export const Hero = () => {
   const downloadPDF = () => {
     const pdfPath = "/vimal-raj-resume.pdf"; // Update this with the actual path
 
-    // Create a temporary anchor element
     const link = document.createElement("a");
 
-    // Set the anchor's href attribute to the PDF file's path
     link.href = pdfPath;
 
-    // Set the download attribute with the desired file name
     link.download = "vimal-raj-resume.pdf";
 
-    // Programmatically click the anchor to trigger the download
     link.click();
   };
 
   return (
-    <section className="h-[60vh] lg:h-screen flex justify-center items-center">
+    <section className="min-h-[60vh] h-full lg:min-h-screen flex justify-center items-center">
       <div>
         <Animate variants={textTransition}>
           <div className="font-lg">

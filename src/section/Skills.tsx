@@ -4,7 +4,7 @@ import { Animate } from "./Animate";
 export const Skills = () => {
   return (
     <section
-      className="h-[60vh] lg:h-screen flex justify-center items-center w-full"
+      className="min-h-[60vh] lg:min-h-[80vh]  h-full flex justify-center items-center w-full"
       id="skills"
     >
       <div className="w-full h-full">
