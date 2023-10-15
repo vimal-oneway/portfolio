@@ -1,7 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Animate } from "./Animate";
-import { ChevronLeft, ChevronRight, Linkedin } from "lucide-react";
-import { Button } from "../components/Button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 // const textTransition = {
 //   visible: { opacity: 1, x: 0, transition: { duration: 1 } },
 //   hidden: { opacity: 0, x: 10 },
