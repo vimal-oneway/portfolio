@@ -12,8 +12,8 @@ export const ProjectCard = ({
 }: ProjectCardProp) => {
   return (
     <Animate>
-      <div className="w-[80%] max-w-6xl mx-auto p-3 bg-accent m-3 md:justify-between flex-col md:flex-row gap-6 flex rounded-xl">
-        <div className="w-full md:w-1/2">
+      <div className="w-[80%] max-w-6xl mx-auto p-3 bg-accent m-3 lg:justify-between flex-col lg:flex-row gap-6 flex rounded-xl">
+        <div className="w-full lg:w-1/2">
           <div className="md:hidden">
             {/* @ts-ignore */}
             <marquee direction="left">
@@ -30,10 +30,15 @@ export const ProjectCard = ({
             </marquee>
           </div>
           <a href={link}>
-            <img src={image} alt={title} className="rounded-lg mt-1" />
+            <img
+              src={image}
+              alt={title}
+              className="rounded-lg mt-1"
+              height={"100"}
+            />
           </a>
         </div>
-        <div className="mt-1 md:mt-0 w-full md:w-1/2">
+        <div className="mt-1 lg:mt-0 w-full lg:w-1/2">
           <div className="py-2 px-2 hidden md:block">
             {/* @ts-ignore */}
             <marquee direction="left">
@@ -56,7 +61,7 @@ export const ProjectCard = ({
           <div className="flex mt-3 gap-3 flex-col md:flex-row">
             <a
               href={link}
-              className={`px-3 py-1 border-2 bg-secondary text-black border-secondary font-semibold md:text-lg flex gap-2 justify-center items-center hover:bg-primary hover:text-secondary rounded-lg  transition-all ease-in-out duration-500`}
+              className={`px-3 py-1 border-2 bg-secondary text-black border-secondary font-semibold md:text-lg flex gap-2 justify-center items-center lg:hover:bg-primary lg:hover:text-secondary rounded-lg  transition-all ease-in-out duration-500`}
             >
               View
               <ArrowUpRight />
@@ -64,7 +69,7 @@ export const ProjectCard = ({
             <a
               href={github}
               // className={`px-3 py-1 border-2 bg-accent font-semibold md:text-lg flex gap-2 justify-center items-center rounded-lg`}
-              className={`px-3 py-1 border-2 bg-primary text-secondary border-secondary font-semibold md:text-lg flex gap-2 justify-center items-center hover:bg-secondary hover:text-primary rounded-lg transition-all ease-in-out duration-500`}
+              className={`px-3 py-1 border-2 bg-primary text-secondary border-secondary font-semibold md:text-lg flex gap-2 justify-center items-center lg:hover:bg-secondary lg:hover:text-primary rounded-lg transition-all ease-in-out duration-500`}
             >
               Github
               <Github />

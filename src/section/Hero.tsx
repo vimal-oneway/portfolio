@@ -27,12 +27,12 @@ export const Hero = () => {
     <section className="min-h-[60vh] h-full lg:min-h-screen flex justify-center items-center">
       <div>
         <Animate variants={textTransition}>
-          <div className="font-lg">
+          <div className="font-lg text-center md:text-start">
             <p>Hey!, I am 👋</p>
           </div>
         </Animate>
         <Animate variants={nameTransition}>
-          <h1 className="text-5xl md:text-8xl mt-1 font-extrabold ">
+          <h1 className="text-4xl md:text-8xl mt-1 font-extrabold text-center">
             VIMAL <span className="text-secondary">RAJ R</span>
           </h1>
         </Animate>
@@ -44,7 +44,7 @@ export const Hero = () => {
           <Button onClick={downloadPDF}>Resume 📄</Button>
           <a
             href="mailto:contact@vimaldev.in"
-            className={`px-3 py-1 border-2 bg-primary text-secondary border-secondary font-semibold md:text-lg flex gap-2 justify-center items-center hover:bg-secondary hover:text-primary rounded-lg transition-all ease-in-out duration-500`}
+            className={`px-3 py-1 border-2 bg-primary text-secondary border-secondary font-semibold md:text-lg flex gap-2 justify-center items-center md:hover:bg-secondary md:hover:text-primary rounded-lg transition-all ease-in-out duration-500`}
           >
             <p>Hire me</p>
             <ArrowUpRight />

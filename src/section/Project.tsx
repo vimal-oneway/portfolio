@@ -39,7 +39,7 @@ const projects: ProjectCardProp[] = [
 export const Project = () => {
   return (
     <section
-      className="min-h-[60vh] lg:min-h-[80vh] h-full mx-auto w-full flex justify-center items-center"
+      className="min-h-[60vh] lg:min-h-[80vh] h-full mx-auto w-full flex justify-center items-center mt-48"
       id="projects"
     >
       <div className="w-full h-full">
