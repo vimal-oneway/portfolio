@@ -7,7 +7,7 @@ export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <div className="px-5 border-b-2 text-lg border-secondary md:fixed sticky top-0 pt-2.5 pb-1 w-full z-40 bg-primary md:flex md:justify-between md:items-center">
-      <div className="hidden md:block">
+      <div className="hidden md:flex justify-between w-full mx-auto container items-center">
         <div className="md:flex md:items-center container mx-auto hidden">
           <a href="#">
             <img
