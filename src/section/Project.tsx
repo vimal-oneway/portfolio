@@ -1,4 +1,4 @@
-import { ProjectCard } from "../components/UI/ProjectCard";
+import { ProjectCard } from "../components/ProjectCard";
 import { Animate } from "./Animate";
 export type ProjectCardProp = {
   title: string;

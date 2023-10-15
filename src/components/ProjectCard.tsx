@@ -1,6 +1,6 @@
 import { ArrowUpRight, Github } from "lucide-react";
-import { Animate } from "../../section/Animate";
-import { ProjectCardProp } from "../../section/Project";
+import { Animate } from "../section/Animate";
+import { ProjectCardProp } from "../section/Project";
 
 export const ProjectCard = ({
   title,

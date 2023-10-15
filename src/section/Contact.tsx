@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Animate } from "./Animate";
 import { ChevronLeft, ChevronRight, Linkedin } from "lucide-react";
-import { Button } from "../components/UI/Button";
+import { Button } from "../components/Button";
 // const textTransition = {
 //   visible: { opacity: 1, x: 0, transition: { duration: 1 } },
 //   hidden: { opacity: 0, x: 10 },
@@ -29,12 +29,7 @@ export const Contact = () => {
       type: "output",
       value: (
         <a href="mailto:contact@vimaldev.in" className="flex gap-1">
-          {/* <span className="text-secondary font-bold">{`$ `}</span>
-          <span> {`Email `}</span>
-          <span>{`~> `}</span> */}
-          <ChevronRight className="text-gray-300 font-medium" />
-
-          <span className="hover:text-blue-500 hover:underline">
+          <span className="hover:text-blue-500 hover:underline text-sm md:text-base">
             contact@vimaldev.in
           </span>
         </a>
@@ -48,13 +43,7 @@ export const Contact = () => {
           href="https://www.linkedin.com/in/vimal-raj-r-webie/"
           className="flex gap-1"
         >
-          {/* <span className="text-secondary font-bold">{`$ `}</span>
-          <span> {`LinkedIn `}</span>
-          <span>{`~> `}</span> */}
-          <ChevronRight className="text-gray-300 font-medium" />
-
-          {/* <span className="text-secondary  font-bold">{`$ LinkedIn == `}</span> */}
-          <span className="hover:text-blue-500 hover:underline">
+          <span className="hover:text-blue-500 hover:underline text-sm md:text-base">
             www.linkedin.com/in/vimal-raj-r-webie/
           </span>
         </a>
@@ -65,12 +54,7 @@ export const Contact = () => {
       type: "output",
       value: (
         <a href="https://github.com/vimal-oneway" className="flex gap-1">
-          {/* <span className="text-secondary font-bold">{`$ `}</span> */}
-          {/* <span> {`Github `}</span> */}
-          {/* <span>{`~> `}</span> */}
-          <ChevronRight className="text-gray-300 font-medium" />
-          {/* <span className="text-secondary font-bold">{`$ Github == `}</span> */}
-          <span className="hover:text-blue-500 hover:underline">
+          <span className="hover:text-blue-500 hover:underline text-sm md:text-base">
             github.com/vimal-oneway
           </span>
         </a>
@@ -100,7 +84,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="mt-32">
+    <section className="mt-32 mb-5">
       <div>
         <Animate>
           <div>
@@ -142,41 +126,30 @@ export const Contact = () => {
 
               <div className="mt-8">
                 <div className="flex ">
-                  <p className="text-secondary font-bold">vimal:~$ </p>
-                  <div className="flex gap-3  ml-1">
+                  <p className="text-secondary font-bold text-sm">vimal:~$ </p>
+                  <div className="flex gap-1.5 md:gap-3  ml-1">
                     {data.map(({ type, value }, i) => {
                       return (
                         type === "input" && (
                           <button
-                            className={`underline decoration-secondary focus:outline-0 focus:border-none font-semibold ${
-                              i + 1 == activeIndex &&
-                              "bg-accent text-secondary "
+                            className={`underline decoration-secondary focus:outline-0 focus:border-none font-semibold text-[.8rem] ${
+                              i + 1 == activeIndex && "bg-accent text-secondary"
                             } `}
                             onClick={() => {
                               setOutput([...output, data[i + 1]]);
                               setActiveIndex(i + 1);
                             }}
                           >
-                            {value}
+                            <p> {value}</p>
                           </button>
                         )
                       );
                     })}
                   </div>
                 </div>
-                <div>
-                  {/* {output.map(({ type, value }, i) => {
-                    return ( */}
-                  <div>
-                    <p>
-                      {/* <span className="text-secondary font-bold">{`${
-                        data[activeIndex].type == "input" ? "$ " : ""
-                      }`}</span> */}
-                      {data[activeIndex].value}
-                    </p>
-                  </div>
-                  {/* ); */}
-                  {/* })} */}
+                <div className="flex gap-1 mt-2.5">
+                  <ChevronRight className="text-gray-300 max-w-[18px] w-full" />
+                  {data[activeIndex].value}
                 </div>
               </div>
             </div>
@@ -192,3 +165,17 @@ export const Contact = () => {
 //   </div>
 //   <div className="">
 //   </div>
+// <div>
+//   {/* {output.map(({ type, value }, i) => {
+//         return ( */}
+//   <div>
+//     <p>
+//       {/* <span className="text-secondary font-bold">{`${
+//             data[activeIndex].type == "input" ? "$ " : ""
+//           }`}</span> */}
+//       {data[activeIndex].value}
+//     </p>
+//   </div>
+//   {/* ); */}
+//   {/* })} */}
+// </div>;

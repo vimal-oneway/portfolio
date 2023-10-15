@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import { Button } from "../components/UI/Button";
+import { Button } from "../components/Button";
 import { Animate } from "./Animate";
 const textTransition = {
   visible: { opacity: 1, x: 0, transition: { duration: 1 } },

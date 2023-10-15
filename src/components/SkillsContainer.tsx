@@ -12,8 +12,8 @@ import {
   ReduxIcon,
   TailwindcssIcon,
   TypescriptIcon,
-} from "../../Icon";
-import { Animate } from "../../section/Animate";
+} from "../Icon";
+import { Animate } from "../section/Animate";
 
 const classes = `w-full h-full text-white bg-cover bg-center flex justify-center items-end rounded-md`;
 

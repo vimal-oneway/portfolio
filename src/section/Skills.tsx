@@ -1,4 +1,4 @@
-import { SkillsContainer } from "../components/UI/SkillsContainer";
+import { SkillsContainer } from "../components/SkillsContainer";
 import { Animate } from "./Animate";
 
 export const Skills = () => {
