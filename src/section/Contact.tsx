@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Animate } from "./Animate";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-// const textTransition = {
-//   visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-//   hidden: { opacity: 0, x: 10 },
-// };
 
 type Output = {
   type: string;
@@ -22,7 +18,6 @@ __         __    _     __      __      ___     __
 
 export const Contact = () => {
   const data: Output[] = [
-    // { type: "input", value: "Contact Me: Reach Out and Let's Connect!" },
     { type: "input", value: "Email" },
     {
       type: "output",
@@ -83,7 +78,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="mt-32 mb-5">
+    <section className="mt-32 mb-5" id="contact">
       <div>
         <Animate>
           <div>
